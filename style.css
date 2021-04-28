@@ -1,27 +1,55 @@
 /* This is the CSS style code for Rylee Nelson's Web Design Challenge */
 
+.nav {
+    z-index: 2;
+}
+
+h1 {
+    padding-left: 10px;
+    font-style: italic;
+    font-family: cursive;
+}
+
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 600px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 0px; /* Stay at the top */
+    top: 55px; /* Stay just below navbar */
     right: 0;
-    background-color: rgb(121, 118, 118); /* Black */
+    background-color: rgb(223, 221, 221); 
     overflow-x: auto; /* Disable horizontal scroll */
     padding-bottom: 10px;
+
+}
+
+.heading {
+   display: inline-flex;
+   width: 600px;
+   height: 150px;
+   text-align: center; 
+
 }
 
 .box {
     display: inline-flex;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 250px;
 }
 
-#title {
+h3 {
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    width: 600px;
+    padding-top: 40px;
+    /* text-decoration-color: black; */
+}
+
+/* #title {
     text-align: center;
     text-decoration: none;
-}
+} */
 
 #top {
     position: relative;
@@ -33,13 +61,14 @@
     position: relative;
     bottom: 0px;
     left: 20px;
+    padding-top: 30px;
 }
 
 img {
     position: relative;
     height: 225px;
     width: 290px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
   /* Style page content */
@@ -48,8 +77,54 @@ img {
     /* padding: 0px 10px;
 } */ 
   
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */ 
+@media screen and (max-width: 992px) {
+    .sidenav {
+        position: absolute;
+        bottom: 0px;
+        height: 500px;
+        width: 100%;
+        overflow-y: auto;
+    }
+    .heading {
+        display: inline-flex;
+        height: 200px;
+        width: 100%;
+        top: 0px;
+    }
+    .box {
+        display: inline-box;
+    }
+    h3 {
+        text-align: center;
+        font-size: 15px;
+    }
+    #top {
+        position: relative;
+    }
+    #bottom {
+        position: relative;
+    }
 }
+/* @media screen and (max-width: 550px) {
+    
+} */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  } */
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  /* @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } */
