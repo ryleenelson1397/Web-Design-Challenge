@@ -81,7 +81,7 @@ img {
 @media screen and (max-width: 992px) {
     .sidenav {
         position: absolute;
-        bottom: 0px;
+        padding-bottom: 0px;
         height: 500px;
         width: 100%;
         overflow-y: auto;
